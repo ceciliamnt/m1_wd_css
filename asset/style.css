@@ -1,0 +1,146 @@
+:root{
+  --gap:2em;
+  --gap2:4em;
+  --boxwidth:calc(100vw - var(--gap2));
+  --boxheight:calc(100vh - var(--gap2));
+  }
+
+
+@font-face {
+  font-family: 'MarvinVisionsTrial-Variable';
+  font-style: normal;
+  src:url("../asset/fonts/MarvinVisionsTrial-Variable.ttf") 
+  format("truetype");
+  font-weight: 120;
+  font-style: normal;
+}
+
+.body{
+  scroll-behavior: smooth;
+  background-color: 
+} 
+
+
+
+header{
+  height: 180px;
+}
+
+h1{
+
+  font-family: "MarvinVisionsTrial-Variable";
+  font-size: 4em;
+  text-align: center;
+  color: #3A3A3A;
+  margin-top: 100px;
+}
+
+h2{
+
+font-family: "MarvinVisionsTrial-Variable";
+font-weight: 120;
+font-size: 5em;
+text-align: center;
+color: #3A3A3A;
+margin-top: 100px;
+}
+
+p{
+
+font-family: "MarvinVisionsTrial-Variable";
+font-size: 1em;
+text-align: center;
+color: #3A3A3A;
+}
+
+
+
+#lettre{
+  display:block;
+  min-height:300px;
+  width:100%;
+  border-radius:4px;
+  align-content: center;
+}
+
+#lettre a{
+  display:block;
+  font-size: 2em;
+  float:left;
+  width:33.33%;
+  text-decoration:none;
+  text-align:center;
+  padding:5px 0;
+  color:#3A3A3A;
+  background:white;
+  font-family: "MarvinVisionsTrial-Variable";
+  margin-bottom: 100px;
+  }
+
+a{
+  display:block;
+  float:left;
+  width:25%;
+  text-decoration:none;
+  text-align:center;
+  padding:5px 0;
+  color:white;
+  background:black;
+}
+
+div{
+ display:block;
+ float:left;
+ height:300px;
+ width:300px;
+ margin:50px;
+ -webkit-transition:all .5s linear;
+ -moz-transition:all .5s linear;
+ -o-transition:all .5s linear;
+ -ms-transition:all .5s linear;
+ transition:all .5s linear;
+ margin-top:20px;
+
+}
+
+
+a:focus[data-filter]{
+    opacity:.8;
+     outline:none;
+}
+
+
+
+div[data-filter="voyelle"]{
+  background:#F2EBE3;
+
+}
+
+div[data-filter="consonne"]{
+  background:#DFCDB9;
+}
+
+a[data-filter="voyelle"]:focus ~ div:not([data-filter="voyelle"]){
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+
+}
+
+
+a[data-filter="consonne"]:focus ~ div:not([data-filter="consonne"]){
+    width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+
+}
+
+.avion{
+  height: 100px;
+  width: 300px; 
+}
+
