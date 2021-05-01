@@ -1,82 +1,193 @@
-:root{
-  --gap:2em;
-  --gap2:4em;
-  --boxwidth:calc(100vw - var(--gap2));
-  --boxheight:calc(100vh - var(--gap2));
-  }
-
-
 @font-face {
   font-family: 'MarvinVisionsTrial-Variable';
   font-style: normal;
-  src:url("../asset/fonts/MarvinVisionsTrial-Variable.ttf") 
+  src:url("../asset/fonts/MarvinVisionsTrial-Variable.ttf")
   format("truetype");
   font-weight: 120;
   font-style: normal;
 }
 
-.body{
+/* Index html */
+body{
   scroll-behavior: smooth;
-  background-color: 
-} 
-
-
-
-header{
-  height: 180px;
+  background-color: #f4e9e1;
+  margin: 0;
+  line-height: 1.6;
 }
+.menu {
+    display: flex;
+    padding:0;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+.menu a {
+    display:block;
+    min-width: 200px;
+    font-family: 'MarvinVisionsTrial-Variable';
+    font-size: 2em;
+    font-variation-settings: 'opsz' 100, 'wght' 30;
+}
+.menu a:hover{
+  color: #cb997e;
+  font-size: 2em;
+  transform: scale(1.2);
+  transition: transform 200ms ease-in-out;
+  transition: all 1s;
+}
+.menu2 {
+    display: flex;
+    padding:0;
+    justify-content: center;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+.menu2 a {
+    display:block;
+    min-width: 200px;
+    font-family: 'MarvinVisionsTrial-Variable';
+    font-size: 2em;
+    font-variation-settings: 'opsz' 100, 'wght' 30;
+}
+.menu2 a:hover{
+  color: #cb997e;
+  font-size: 2em;
+  transform: scale(1.2);
+  transition: transform 200ms ease-in-out;
+  transition: all 1s;
+}
+#scroll_to_top {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  bottom: 50px;
+  right: 30px;
+}
+#scroll_to_top img {
+  width: 55px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+#scroll_to_top:hover{
+  height: 50px;
+  transition: transform 100ms ease-in-out;
+  transition: all 0.8s;
+}
+#index{
+  height: 850px;
+  background-image: url("../entete.png");
+  background-repeat: no-repeat;
+  object-fit: fill;
+  padding-top: 2.5em;
+}
+.intro{
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: lighter;
+  padding-top: 3em;
+  text-align: center;
+  color:white;
+}
+#filter-box{
+  display: flex;
+  font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 150px;
+  grid-column-start:2;
+  grid-row-start:4;
+  padding-bottom: 50px;
+  border-right: solid 1px #52796F;
+  border-left: solid 1px #52796F;
+  font-family: "MarvinVisionsTrial-Variable";
+  font-variation-settings: 'opsz' 120, 'wght' 60;
+}
+.discover{
+  display: flex;
+  justify-content: center;
+}
+a.button{
+    background-color: #FFFFFF;
+    display:block;
+    color:#cb997e;
+    height:30px;
+    line-height:29px;
+    font-family: "MarvinVisionsTrial-Variable";
+    width:11em;
+    margin-top: 12em;
+    font-size: 1.5em;
+    border-radius: 5px;
+  }
 
+
+a:hover.button{
+    color:#FFFFFF;
+    background-color: #cb997e;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+  }
+.box-filter{
+display: none;
+}
+#voyelles:target ~ .consonnes{
+  display: none;
+}
+#consonnes:target ~ .voyelles{
+  display: none;
+}
 h1{
-
   font-family: "MarvinVisionsTrial-Variable";
   font-size: 4em;
   text-align: center;
-  color: #3A3A3A;
-  margin-top: 100px;
+  color: white;
+  font-variation-settings: 'opsz' 120, 'wght' 40;
+  margin-top: 2.8em;
 }
-
 h2{
-
 font-family: "MarvinVisionsTrial-Variable";
 font-weight: 120;
-font-size: 5em;
+font-size: 6em;
 text-align: center;
 color: #3A3A3A;
 margin-top: 100px;
+margin-top: 1px;
 }
-
 p{
-
+  color: #cb997e;
+}
+.item > p{
 font-family: "MarvinVisionsTrial-Variable";
-font-size: 1em;
-text-align: center;
-color: #3A3A3A;
+font-size: 1.3em;
 }
-
-
-
+.item:hover .st0{
+  animation: content-letter 0.6s ease-in-out;
+}
 #lettre{
-  display:block;
-  min-height:300px;
-  width:100%;
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+  grid-auto-rows: 300px;
+  grid-gap: 40px;
+  width: 84%;
   border-radius:4px;
+  margin: auto;
   align-content: center;
+  font-variation-settings: 'opsz' 120, 'wght' 60;
 }
-
 #lettre a{
   display:block;
-  font-size: 2em;
+  font-size: 2.3em;
   float:left;
   width:33.33%;
   text-decoration:none;
   text-align:center;
   padding:5px 0;
-  color:#3A3A3A;
-  background:white;
+  color: white;
+  background:transparent;
   font-family: "MarvinVisionsTrial-Variable";
-  margin-bottom: 100px;
   }
-
 a{
   display:block;
   float:left;
@@ -85,62 +196,189 @@ a{
   text-align:center;
   padding:5px 0;
   color:white;
-  background:black;
 }
-
 div{
  display:block;
  float:left;
  height:300px;
  width:300px;
- margin:50px;
- -webkit-transition:all .5s linear;
- -moz-transition:all .5s linear;
- -o-transition:all .5s linear;
- -ms-transition:all .5s linear;
- transition:all .5s linear;
  margin-top:20px;
-
+}
+.illu{
+  width: 12em;
+}
+.pageavion{
+  background-color: #FFF3EB;
+}
+.item:hover{
+transform: scale(1.1);
+background-color: #EAD5C8;
+transition: all 0.4s ease-in-out;
+}
+.item:hover .st0{
+  fill: #FFFFFF;
+}
+.filter{
+  margin-top: 2em;
+  margin-bottom: 5em;
+  font-size: 1.3em;
+  font-variation-settings: 'opsz' 120, 'wght' 40;
+}
+.filter:hover{
+transform: scale(1.1);
+transition: all 0.7s ease-in-out;
+color: #cb997e;
+}
+.item:hover p{
+  color: #FFFFFF;
+}
+.item{
+   display: flex;
+   flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+ul {
+  display: inline-grid;
+  grid-auto-flow: row;
+  grid-gap: 24px;
+  align-items: center;
+  margin: auto;
+}
+@media (min-width: 500px) {
+  ul {
+    grid-auto-flow: column;
+  }
+}
+footer{
+  margin-top: 100px;
+}
+.footer {
+  color: white;
+  text-decoration: none;
+  box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+}
+.footer:hover {
+  box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+}
+li:last-child {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+li:hover ~ li p {
+  animation: wave-animation 0.3s infinite;
+}
+#footer {
+  display: flex;
+  height: 30vh;
+  width: 100vw;
+  background-color: #cb997e;
+  line-height: normal;
+  font-family: 'MarvinVisionsTrial-Variable';
+}
+@keyframes wave-animation {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+}
+@keyframes content-letter {
+  0%{
+      transform: translateY(-50px);
+      opacity: 0%;
+  }
+  100%{
+transform: translateY(0);
+    opacity: 100%;
+    }
 }
 
 
-a:focus[data-filter]{
-    opacity:.8;
-     outline:none;
+
+/* Page alligator */
+#alligator{
+background-image: url("../alligator.png");
+height: 850px;
+  background-repeat: no-repeat;
+  object-fit: fill;
+  padding-top: 2.5em;
+}
+.hector{
+  display: flex;
+  justify-content: center;
+}
+a.hectorlife{
+    background-color: #FFFFFF;
+    display:block;
+    color:#cb997e;
+    height:30px;
+    line-height:29px;
+    font-family: "MarvinVisionsTrial-Variable";
+    width:15em;
+    margin-top: 18em;
+    font-size: 1.5em;
+    border-radius: 5px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-variation-settings: 'opsz' 120, 'wght' 40;
+  }
+a:hover.hectorlife{
+    color:#FFFFFF;
+    background-color: #cb997e;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+  }
+#croco{
+  width: 20em;
+  float: right;
+  padding-right: 3em;
+  padding-top: 3em;
+}
+.center{
+margin-left: auto;
+margin-right: auto;
+width: 100px;
+height: auto;
+}
+.large{
+  width: 960px;
+}
+h1.title{
+  font-size: 1.8rem;
+  text-align: left;
+  padding-bottom: 1.2em;
+  padding-left: 2.2em;
+  color: #cb997e;
+}
+
+article .heading{
+  text-align: center;
+}
+
+
+p.lorem{
+  margin-left: 4em;
+  color: white;
+}
+
+
+article.secondarticle{
+  padding-bottom: 3em;
 }
 
 
 
-div[data-filter="voyelle"]{
-  background:#F2EBE3;
-
-}
-
-div[data-filter="consonne"]{
-  background:#DFCDB9;
-}
-
-a[data-filter="voyelle"]:focus ~ div:not([data-filter="voyelle"]){
-  width:0;
-  height:0;
-  padding:0;
-  margin:0;
-  opacity:0;
-
-}
 
 
-a[data-filter="consonne"]:focus ~ div:not([data-filter="consonne"]){
-    width:0;
-  height:0;
-  padding:0;
-  margin:0;
-  opacity:0;
 
-}
 
-.avion{
-  height: 100px;
-  width: 300px; 
-}
+
+
+
 

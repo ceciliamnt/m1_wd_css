@@ -1,0 +1,327 @@
+@font-face {
+  font-family: 'MarvinVisionsTrial-Variable';
+  font-style: normal;
+  src:url("../asset/fonts/MarvinVisionsTrial-Variable.ttf")
+  format("truetype");
+  font-weight: 120;
+  font-style: normal;
+}
+
+body{
+  scroll-behavior: smooth;
+  background-color: #f4e9e1;
+  margin: 0;
+  line-height: 1.6;
+}
+
+#alligator{
+  height: 850px;
+  background-image: url("../entete2.jpg");
+  background-repeat: no-repeat;
+  object-fit: fill;
+  padding-top: 2.5em;
+}
+
+#scroll_to_top {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  bottom: 50px;
+  right: 30px;
+}
+#scroll_to_top img {
+  width: 55px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+#scroll_to_top:hover{
+  height: 50px;
+  transition: transform 100ms ease-in-out;
+  transition: all 0.8s;
+}
+
+.menu {
+    display: flex;
+    padding:0;
+    justify-content: center;
+    margin-bottom: 3em;
+    padding-bottom: 5em;
+}
+.menu a {
+    display:block;
+    min-width: 200px;
+    font-family: 'MarvinVisionsTrial-Variable';
+    font-size: 1.7em;
+    font-variation-settings: 'opsz' 100, 'wght' 40;
+    color: #cb997e;
+}
+.menu a:hover{
+  color: #cb997e;
+  font-size: 2em;
+  transform: scale(1.2);
+  transition: transform 200ms ease-in-out;
+  transition: all 1s;
+}
+
+.intro{
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+  color: #cb997e;
+  font-size: 1.5em;
+}
+
+.discover{
+  display: flex;
+  justify-content: center;
+}
+
+a.button{
+    background-color: #cb997e;
+    display:block;
+    color: white;
+    height:30px;
+    line-height:29px;
+    font-family: "MarvinVisionsTrial-Variable";
+    font-variation-settings: 'opsz' 100, 'wght' 50;
+    width:11em;
+    margin-top: 12em;
+    font-size: 1.5em;
+    border-radius: 5px;
+    margin-bottom: 5em;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+
+a:hover.button{
+    color:#cb997e;
+    background-color: white;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+  }
+
+a {
+  color: #FF0;
+  text-decoration: none;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  line-height: 2;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.tm-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.masonry {
+  -webkit-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 0;
+  column-gap: 0;
+}
+
+.item {
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tm-relative {
+  position: relative;
+}
+
+.tm-block {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 600px;
+}
+
+.tm-block-wider {
+  max-width: 640px;
+  width: calc(100% + 40px);
+}
+
+.tm-block-left {
+  right: 20px;
+  bottom: 20px;
+}
+
+.tm-block-left-2 {
+  right: 60px;
+  top: 15px;
+}
+
+.tm-block-right {
+  padding: 15px 0 20px 20px;
+}
+
+.tm-img-left {
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.tm-hero-text {
+  padding: 140px 95px 0;
+  font-family: sans-serif;
+  padding-bottom: 2em;
+}
+
+.tm-block-pad {
+  padding: 67px 63px;
+}
+
+.tm-block-icon {
+  text-align: center;
+  display: block;
+  margin: 0 30px 30px;
+}
+
+.tm-block-brand {
+  position: relative;
+  margin-top: 147px;
+  margin-bottom: 27px;
+}
+
+.tm-block-brand-inner {
+  position: relative;
+  right: 50px;
+  padding: 70px 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.tm-brand-name {
+  margin: 0 40px 0;
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: 'MarvinVisionsTrial-Variable'
+}
+
+.tm-bg-dark {
+  background-color: #cb997e;
+
+}
+
+.tm-bg-white {
+  background-color: #ffffff;
+}
+
+.tm-btn {
+  padding: 15px 25px;
+  display: inline-block;
+  font-size: 1em;
+}
+
+
+.tm-btn-pad-big {
+  padding: 17px 45px;
+}
+
+.tm-btn-secondary {
+  color: white;
+  background-color: #cb997e;
+}
+
+.tm-btn-secondary:hover {
+  color: #cb997e;
+  background-color: white;
+}
+
+.tm-text-white {
+  color: #ffffff;
+}
+
+.tm-text-gray-light {
+  color: #cb997e;
+}
+
+.tm-bg-primary-light {
+  background-color: #cb997e;
+}
+
+.tm-bg-primary-dark {
+  background-color: #cb997e;
+}
+
+.tm-bg-secondary {
+  background-color: #cb997e;
+}
+
+.tm-mt {
+  margin-top: 30px;
+}
+
+.tm-mt-big {
+  margin-top: 50px;
+}
+
+.tm-mb {
+  margin-bottom: 45px;
+}
+
+.tm-mb-small {
+  margin-bottom: 20px;
+}
+
+
+
+
+@media (max-width: 1232px) {
+  body {
+    padding: 60px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .masonry {
+    /* Masonry container */
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+
+
+
+@media (max-width: 390px) {
+  body {
+    padding: 40px 20px 10px;
+  }
+
+  ul {
+  display: inline-grid;
+  grid-auto-flow: row;
+  grid-gap: 24px;
+  align-items: center;
+  margin: auto;
+}
+@media (min-width: 500px) {
+  ul {
+    grid-auto-flow: column;
+  }
+}
